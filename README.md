@@ -1,61 +1,106 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Oshigoto Japan — Job Application System
+========================================
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Student Name: Phone Myint Maw
+Student ID / Registration: 200495 /  G21344079
+Module Name: Information Systems Project
+Module Leader: Steve Wade
+Semester: ISP Autumn 2025
+Submission Date: 30.11.2025
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Minimum System Specifications
+---------------------------------
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Software Requirements
 
-## Learning Laravel
+Operation System: Windows 10 (64 bit) or later
+Web Server Environment: XAMPP (Apache + MySQL) version 7.4 or above
+IDE: Any IDE but VSCode is preferred
+PHP Version: PHP 8.1 or Later
+Laravel Framework: Laravel 10
+Browser: Any Modern Browser (Chrome, Edge, etc.)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Hardware Requirements
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Processor (CPU): Dual-core processor (Intel or AMD)
+Memory (RAM): Minimum 4 GB (8GB recommended for smoother installation)
+Storage: At least 1 GB free space
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
+Installation Steps
+---------------------
+1. Extract the "200495_Phone Myint Maw_ISP_Final Report_Autumn 2025" zip file and open the folder.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+2. Open the folder named:
+   200495_Phone Myint Maw_ISP Source Codes_Autumn 2025
 
-## Contributing
+3. Inside the folder, locate:
+   200495_Phone_Myint_Maw_ISP_Project
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+   Put this folder inside your XAMPP 'htdocs' directory.
 
-## Code of Conduct
+4. Open phpMyAdmin and create a database named:
+   `oshigoto`.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5. Import the following database file:
+   `oshigoto.sql` (Located in 200495_Phone Myint Maw_ISP Source Codes_Autumn 2025 Folder)
 
-## Security Vulnerabilities
+6. Open terminal inside the project folder: 
+   200495_Phone_Myint_Maw_ISP_Project
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   Then Run:
+   composer install
 
-## License
+7. After installing composer, 
+   Run:
+   php artisan serve
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+8. Access the project at:
+   http://localhost:8000
+
+
+
+
+Possible Fixes
+---------------------
+
+If uploaded files (images, PDFs, etc.) do not appear on the website, it may be due to a missing storage link.
+
+To fix this:
+
+1. Delete "storage" folder inside the "public" folder.
+
+2. Open terminal in the project folder: 
+   200495_Phone_Myint_Maw_ISP_Project
+
+   And then run:
+   php artisan storage:link
+
+3. The files can now be accessible on the website.
+
+
+
+
+Default Logins
+-----------------
+Admin Account:
+  Email: admin@oshigoto.com
+  Password: pmm552002
+
+
+Partner Accounts:
+  Email: mmtoshin@gmail.com  (Main Account used for testing)
+  Password: toshin2025
+
+  Email: Hikari@gmail.com  (Additional Account)
+  Password: hikari2025
+
+  Email: nihongo@gmail.com  (Additional Account)
+  Password: nihon2025
+
+
+
