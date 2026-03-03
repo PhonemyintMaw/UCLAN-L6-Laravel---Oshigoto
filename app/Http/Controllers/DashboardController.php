@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CVForms;
-use App\models\joblisting;
+use App\Models\joblisting;
 use App\Models\partner;
 use App\Models\Application;
 use Illuminate\Support\Facades\Cache;
