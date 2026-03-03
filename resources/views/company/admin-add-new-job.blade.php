@@ -4,7 +4,7 @@
 
         <div class="w-4/5">
 
-            <a href="/all-listed-jobs" class="inline-block border-2 font-bold 
+            <a href="{{ url('/all-listed-jobs') }}" class="inline-block border-2 font-bold 
     border-black text-white bg-black py-3 px-4 rounded-xl uppercase hover:text-white 
     shadow-lg">
                 <i class="fa-solid fa-arrow-left"></i> Back to All Jobs
@@ -28,7 +28,8 @@
 
                             <div class="lg:w-4/5 p-10 border-2 border-black">
 
-                                <form method="post" action="/all-listed-jobs" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('/all-listed-jobs') }}"
+                                    enctype="multipart/form-data">
 
                                     @csrf
 

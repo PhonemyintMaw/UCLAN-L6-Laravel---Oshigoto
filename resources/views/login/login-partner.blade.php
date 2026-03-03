@@ -47,7 +47,7 @@
         </div>
         @endif
 
-        <form method="POST" action="/partner/authenticate">
+        <form method="POST" action="{{ url('/partner/authenticate') }}">
             @csrf
             <div class="mb-6">
 

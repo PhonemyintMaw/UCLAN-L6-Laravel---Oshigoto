@@ -3,7 +3,7 @@
     <div class="flex justify-center mb-20">
         <div class="w-3/4">
 
-            <a href="/partner-view-cv/{{$cv -> cv_code}}" class="mt-5 ml-5 inline-block border-2 font-bold 
+            <a href="{{ url('/partner-view-cv/'.$cv -> cv_code) }}" class="mt-5 ml-5 inline-block border-2 font-bold 
     border-black text-white bg-black py-1 px-2 rounded-xl uppercase hover:text-white 
     shadow-lg">
                 <i class="fa-solid fa-arrow-left"></i> View CV
@@ -23,7 +23,8 @@
 
                     </header>
 
-                    <form method="post" action="/partner-view-cv/{{$cv -> cv_code}}" enctype="multipart/form-data">
+                    <form method="post" action="{{ url('/partner-view-cv/'.$cv -> cv_code) }}"
+                        enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
 

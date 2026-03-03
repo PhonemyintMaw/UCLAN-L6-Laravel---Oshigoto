@@ -24,7 +24,7 @@
 
                             @include('components._message')
 
-                            <form method="post" action="/admin-applications/{{$cv->cv_code}}/evaluate"
+                            <form method="post" action="{{ url('/admin-applications/'.$cv->cv_code.'/evaluate') }}"
                                 enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
@@ -84,7 +84,7 @@
                         </div>
 
                         <div>
-                            <a href="/admin-applications" class="transition duration-200 mt-5 
+                            <a href="{{ url('/admin-applications') }}" class="transition duration-200 mt-5 
             inline-block font-bold text-white bg-black py-2 px-4 
             rounded-xl uppercase">
                                 Back to Application Page

@@ -38,7 +38,7 @@
 
             <li>
 
-                <form method="POST" action="/partner/logout" class="inline">
+                <form method="POST" action="{{ url('/partner/logout') }}" class="inline">
                     @csrf
                     <button type="submit" class="transition duration-300 hover:underline">
                         <i class="fa-solid fa-door-closed col-span-1"></i>
@@ -73,7 +73,7 @@
 
     <div class="flex justify-end p-3 pr-10 text-2xl">
 
-        <a href="/" class="ml-5 inline-block border-2 font-bold 
+        <a href="{{ url('/') }}" class="ml-5 inline-block border-2 font-bold 
             border-black text-white bg-black py-1 px-4 rounded-xl uppercase 
             hover:text-black hover:bg-white">
             Log In

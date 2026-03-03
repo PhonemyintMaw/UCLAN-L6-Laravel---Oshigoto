@@ -23,7 +23,7 @@
                     <p class="ml-4">
                         Search with Partner Name or Partner Nationality
                     </p>
-                    <form action="/all-partners">
+                    <form action="{{ url('/all-partners') }}">
 
                         @include('components._search')
 
@@ -32,7 +32,7 @@
 
                 <div class="flex justify-between mb-5">
                     <div class="flex justify-center">
-                        <a href="/all-partners" class="transition duration-300 inline-block border-2 
+                        <a href="{{ url('/all-partners') }}" class="transition duration-300 inline-block border-2 
             font-bold border-black text-black py-2 px-4 rounded-xl 
             hover:bg-black hover:text-white shadow-lg">
                             Refresh
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <a href="/register-new-partner" class="transition duration-200 
+                        <a href="{{ url('/register-new-partner') }}" class="transition duration-200 
         inline-block border-2 font-bold border-black text-black py-2 px-4 rounded-xl 
         hover:bg-black hover:text-white shadow-lg">
                             <i class="fa-solid fa-plus"></i> Add New
@@ -89,7 +89,7 @@
 
                                     <td class="px-4 py-8 border-t border-b border-gray-300 text-center font-bold">
                                         <a class="text-lg lg:text-2xl font-bold"
-                                            href="/all-partners?search={{$partner -> partner_name}}">
+                                            href="{{ url('/all-partners?search='.$partner -> partner_name) }}">
                                             {{$partner -> partner_name}}
                                         </a>
                                     </td>
@@ -102,13 +102,14 @@
 
                                     <td class="px-4 py-8 border-t border-b border-gray-300 text-center font-bold">
                                         <a class="text-lg m-2 lg:text-xl w-24 hover:text-blue-500"
-                                            href="/all-partners?search={{$partner -> partner_nationality}}">
+                                            href="{{ url('/all-partners?search='.$partner -> partner_nationality) }}">
                                             {{$partner -> partner_nationality}}
                                         </a>
                                     </td>
 
                                     <td class="px-4 py-8 border-t border-b border-gray-300 text-center">
-                                        <a class="hover:text-blue-700" href="/all-partners/{{$partner -> partner_id}}">
+                                        <a class="hover:text-blue-700"
+                                            href="{{ url('/all-partners/'.$partner -> partner_id) }}">
                                             <i class="fa-solid fa-circle-info mr-1"></i> More Info
                                         </a>
                                     </td>

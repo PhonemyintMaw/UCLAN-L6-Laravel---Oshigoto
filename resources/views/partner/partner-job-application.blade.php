@@ -4,7 +4,7 @@
 
         <div class="w-5/6">
 
-            <a href="/job-info/{{$job -> job_code}}" class="mt-5 mb-10 ml-5 inline-block border-2 font-bold 
+            <a href="{{ url('/job-info/'.$job -> job_code) }}" class="mt-5 mb-10 ml-5 inline-block border-2 font-bold 
 border-black text-white bg-black py-1 px-2 rounded-xl uppercase hover:text-white 
 shadow-lg">
                 <i class="fa-solid fa-arrow-left"></i> Back
@@ -167,7 +167,7 @@ shadow-lg">
             <!-- Lower Section -->
             <div class="flex justify-center">
 
-                <a href="/partner-applied-list" class="mt-10 inline-block border-2 font-bold 
+                <a href="{{ url('/partner-applied-list') }}" class="mt-10 inline-block border-2 font-bold 
     border-black text-white bg-black py-3 px-5 rounded-xl uppercase hover:text-white 
     shadow-lg">
                     Done

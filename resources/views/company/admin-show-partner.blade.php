@@ -7,13 +7,13 @@
             <!-- UPPER SECTION -->
             <section class="flex justify-between mb-20">
 
-                <a href="/all-partners" class="mt-5 ml-5 inline-block border-2 font-bold 
+                <a href="{{ url('/all-partners') }}" class="mt-5 ml-5 inline-block border-2 font-bold 
         border-black text-white bg-black py-1 px-2 rounded-xl uppercase hover:text-white 
         shadow-lg">
                     <i class="fa-solid fa-arrow-left"></i> Back to All Partner List
                 </a>
 
-                <a href="/all-partners/{{$partner -> partner_id}}/edit" class="transition 
+                <a href="{{ url('/all-partners/'.$partner -> partner_id.'/edit') }}" class="transition 
                     duration-200 bg-green-700 mt-5 ml-5 inline-block border-2 
                     font-bold border-green-700 text-white bg-black py-1 px-2 rounded-xl uppercase 
                     hover:text-green-700 hover:bg-white">

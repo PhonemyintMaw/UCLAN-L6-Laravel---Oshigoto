@@ -4,7 +4,7 @@
 
         <div class="w-5/6">
 
-            <a href="/all-partners" class="mt-5 ml-5 inline-block border-2 font-bold 
+            <a href="{{ url('/all-partners') }}" class="mt-5 ml-5 inline-block border-2 font-bold 
 border-black text-white bg-black py-1 px-2 rounded-xl uppercase hover:text-white 
 shadow-lg">
                 <i class="fa-solid fa-arrow-left"></i> Back to all Partners
@@ -32,7 +32,7 @@ shadow-lg">
 
                         </div>
 
-                        <form method="POST" action="/all-partners">
+                        <form method="POST" action="{{ url('/all-partners') }}">
 
                             @csrf
                             <div>

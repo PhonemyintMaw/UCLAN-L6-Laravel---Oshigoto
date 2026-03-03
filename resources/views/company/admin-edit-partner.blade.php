@@ -4,7 +4,7 @@
 
         <div class="w-5/6">
 
-            <a href="/all-partners/{{$partner -> partner_id}}" class="inline-block border-2 font-bold 
+            <a href="{{ url('/all-partners/'.$partner -> partner_id) }}" class="inline-block border-2 font-bold 
     border-black text-white bg-black py-3 px-4 rounded-xl uppercase hover:text-white 
     shadow-lg">
                 <i class="fa-solid fa-arrow-left"></i> Back
@@ -28,7 +28,7 @@
 
                             @include('components._message')
 
-                            <form method="post" action="/all-partners/{{$partner -> partner_id}}"
+                            <form method="post" action="{{ url('/all-partners/'.$partner -> partner_id) }}"
                                 enctype="multipart/form-data">
 
                                 @csrf

@@ -24,7 +24,7 @@
                         Search with Company Name, Job Type, Job Title, Japanese Language Level, or
                         Applicable Nationality
                     </p>
-                    <form action="/all-listed-jobs">
+                    <form action="{{ url('/all-listed-jobs') }}">
 
                         @include('components._search')
 
@@ -35,7 +35,7 @@
                     <div class="flex justify-between mb-5">
 
                         <div class="col-span-1">
-                            <a href="/all-listed-jobs" class="transition duration-300 inline-block border-2 
+                            <a href="{{ url('/all-listed-jobs') }}" class="transition duration-300 inline-block border-2 
                             font-bold border-black text-black py-2 px-4 rounded-xl 
                             hover:bg-black hover:text-white shadow-lg">
                                 Refresh
@@ -43,7 +43,7 @@
                         </div>
 
                         <div class="col-span-1">
-                            <a href="/add-new-job" class="transition duration-300 inline-block border-2 
+                            <a href="{{ url('/add-new-job') }}" class="transition duration-300 inline-block border-2 
                             font-bold border-black text-black py-2 px-4 rounded-xl 
                             hover:bg-green-700 hover:text-white hover:border-green-700 shadow-lg">
                                 <i class="fa-solid fa-paper-plane"></i> Add New Job
@@ -108,26 +108,26 @@
                                         <td class="px-4 py-8 border-t border-b border-gray-300 text-center font-bold">
 
                                             <a class="text-sm font-bold lg:text-lg"
-                                                href="/all-listed-jobs?search={{$job -> job_type}}">{{$job -> job_type}}</a>
+                                                href="{{ url('/all-listed-jobs?search='.$job -> job_type) }}">{{$job -> job_type}}</a>
 
                                         </td>
                                         <td class="px-4 py-8 border-t border-b border-gray-300 text-center font-bold">
 
                                             <a class="text-sm font-bold lg:text-lg"
-                                                href="/all-listed-jobs?search={{$job -> required_jp_level}}">{{$job -> required_jp_level}}</a>
+                                                href="{{ url('/all-listed-jobs?search='.$job -> required_jp_level) }}">{{$job -> required_jp_level}}</a>
 
                                         </td>
                                         <td class="px-4 py-8 border-t border-b border-gray-300 text-center font-bold">
 
-                                            <a class="text-sm font-bold lg:text-lga"
-                                                href="/all-listed-jobs?search={{$job -> job_nationality}}">{{$job -> job_nationality}}</a>
+                                            <a class="text-sm font-bold lg:text-lg"
+                                                href="{{ url('/all-listed-jobs?search='.$job -> job_nationality) }}">{{$job -> job_nationality}}</a>
 
                                         </td>
                                         <td class="px-4 py-8 border-t border-b border-gray-300 text-center font-bold">
                                             <ul>
 
                                                 <li class="flex justify-center mb-1">
-                                                    <a href="/all-listed-jobs/{{$job -> job_code}}"
+                                                    <a href="{{ url('/all-listed-jobs/'.$job -> job_code) }}"
                                                         class="items-center text-blue-700 hover:underline">
 
                                                         More Info
@@ -136,7 +136,7 @@
                                                 </li>
 
                                                 <li class="flex justify-center mb-1">
-                                                    <a href="/all-listed-jobs/{{$job -> job_code}}/edit"
+                                                    <a href="{{ url('/all-listed-jobs/'.$job -> job_code.'/edit') }}"
                                                         class="items-center text-blue-700 hover:underline">
 
                                                         Edit

@@ -4,7 +4,7 @@
 
         <div class="w-5/6">
 
-            <a href="/all-listed-jobs/{{$job -> job_code}}" class="inline-block border-2 font-bold 
+            <a href="{{ url('/all-listed-jobs/'.$job -> job_code) }}" class="inline-block border-2 font-bold 
     border-black text-white bg-black py-3 px-4 rounded-xl uppercase hover:text-white 
     shadow-lg">
                 <i class="fa-solid fa-arrow-left"></i> View Job
@@ -24,7 +24,7 @@
                     <div class="flex justify-center">
 
                         <div class="p-20 border-2 border-black w-3/4">
-                            <form method="post" action="/all-listed-jobs/{{$job -> job_code}}"
+                            <form method="post" action="{{ url('/all-listed-jobs/'.$job -> job_code) }}"
                                 enctype="multipart/form-data">
 
                                 @csrf

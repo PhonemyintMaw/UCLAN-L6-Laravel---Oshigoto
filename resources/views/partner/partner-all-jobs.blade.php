@@ -9,12 +9,12 @@
                 <p class="ml-4">Search Jobs with Job Type, Language Level or Job Title</p>
 
                 <div class="grid grid-cols-6 items-center">
-                    <form class="col-span-5" action="/apply-jobs">
+                    <form class="col-span-5" action="{{ url('/apply-jobs') }}">
 
                         @include('components._search')
 
                     </form>
-                    <a href="/apply-jobs" class="m-4 col-span-1 transition duration-300 inline-block border-2 
+                    <a href="{{ url('/apply-jobs') }}" class="m-4 col-span-1 transition duration-300 inline-block border-2 
             font-bold border-black text-black rounded-xl py-2
             hover:bg-black hover:text-white shadow-lg flex justify-center">
                         Refresh
@@ -51,13 +51,13 @@
 
                                 <li
                                     class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 m-2 text-xs max-w-24">
-                                    <a href="/apply-jobs?search={{$job -> job_type}}">{{$job -> job_type}}</a>
+                                    <a href="{{ url('/apply-jobs?search='.$job->job_type) }}">{{$job -> job_type}}</a>
                                 </li>
 
                                 <li
                                     class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 m-2 text-xs max-w-24">
                                     <a
-                                        href="/apply-jobs?search={{$job -> required_jp_level}}">{{$job -> required_jp_level}}</a>
+                                        href="{{ url('/apply-jobs?search='.$job->required_jp_level) }}">{{$job -> required_jp_level}}</a>
                                 </li>
 
                             </ul>
@@ -84,7 +84,7 @@
                             </div>
 
                             <div class="col-span-1 flex justify-center m-5">
-                                <a href="/job-info/{{$job -> job_code}}"
+                                <a href="{{ url('/job-info/'.$job -> job_code) }}"
                                     class="border-black border-2 rounded-xl text-black bg-white py-1 px-2 hover:bg-black hover:text-white">
                                     See More
                                 </a>

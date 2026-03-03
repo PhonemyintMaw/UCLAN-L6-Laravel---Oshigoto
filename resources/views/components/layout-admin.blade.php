@@ -41,7 +41,7 @@
             <ul class="text-lg font-bold p-5">
 
                 <li class="mb-5 justify-right items-center">
-                    <a href="/admin-home" class="transition duration-300 grid grid-cols-5 uppercase 
+                    <a href="{{ url('/admin-home') }}" class="transition duration-300 grid grid-cols-5 uppercase 
                     text-black bg-transparent 
                         hover:bg-gray-200 hover:text-gray-900 rounded-lg inline-flex items-center 
                         dark:hover:bg-gray-600 dark:hover:text-white py-2 px-3">
@@ -51,7 +51,7 @@
                 </li>
 
                 <li class="mb-5 justify-right items-center">
-                    <a href="/all-listed-jobs" class="transition duration-300 grid grid-cols-5 uppercase 
+                    <a href="{{ url('/all-listed-jobs') }}" class="transition duration-300 grid grid-cols-5 uppercase 
                     text-black bg-transparent 
                         hover:bg-gray-200 hover:text-gray-900 rounded-lg inline-flex items-center 
                         dark:hover:bg-gray-600 dark:hover:text-white py-2 px-3">
@@ -61,7 +61,7 @@
                 </li>
 
                 <li class="mb-5 justify-right items-center">
-                    <a href="/all-partners" class="transition duration-300 grid grid-cols-5 uppercase 
+                    <a href="{{ url('/all-partners') }}" class="transition duration-300 grid grid-cols-5 uppercase 
                     text-black bg-transparent 
                         hover:bg-gray-200 hover:text-gray-900 rounded-lg inline-flex items-center 
                         dark:hover:bg-gray-600 dark:hover:text-white py-2 px-3">
@@ -71,7 +71,7 @@
                 </li>
 
                 <li class="mb-5 justify-right items-center">
-                    <a href="/admin-applications" class="transition duration-300 grid grid-cols-5 uppercase 
+                    <a href="{{ url('/admin-applications') }}" class="transition duration-300 grid grid-cols-5 uppercase 
                     text-black bg-transparent 
                         hover:bg-gray-200 hover:text-gray-900 rounded-lg inline-flex items-center 
                         dark:hover:bg-gray-600 dark:hover:text-white py-2 px-3">
@@ -81,7 +81,7 @@
                 </li>
 
                 <li class="mb-5 justify-right items-center">
-                    <a href="/all-cv" class="transition duration-300 grid grid-cols-5 uppercase 
+                    <a href="{{ url('/all-cv') }}" class="transition duration-300 grid grid-cols-5 uppercase 
                     text-black bg-transparent 
                         hover:bg-gray-200 hover:text-gray-900 rounded-lg inline-flex items-center 
                         dark:hover:bg-gray-600 dark:hover:text-white py-2 px-3">
@@ -91,7 +91,7 @@
                 </li>
 
                 <li class="mb-5 justify-right items-center">
-                    <a href="/admin-completed" class="transition duration-300 grid grid-cols-5 uppercase 
+                    <a href="{{ url('/admin-completed') }}" class="transition duration-300 grid grid-cols-5 uppercase 
                     text-black bg-transparent 
                         hover:bg-gray-200 hover:text-gray-900 rounded-lg inline-flex items-center 
                         dark:hover:bg-gray-600 dark:hover:text-white py-2 px-3">
@@ -126,7 +126,7 @@
                                         Cancel
                                     </button>
 
-                                    <form method="POST" action="/admin/logout" class="inline">
+                                    <form method="POST" action="{{ url('/admin/logout') }}" class="inline">
                                         @csrf
                                         <button type="submit" class="transition duration-300 uppercase 
                                         text-black py-2 px-3 flex justify-center inline-flex items-center

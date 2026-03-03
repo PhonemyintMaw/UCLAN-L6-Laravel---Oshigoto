@@ -20,7 +20,7 @@
                 <p class="ml-4">
                     Search CV with Name, Japanese Language Level, Job Type or Nationality
                 </p>
-                <form action="/all-cv">
+                <form action="{{ url('/all-cv') }}">
 
                     @include('components._search')
 
@@ -32,7 +32,7 @@
 
                 <div class="flex justify-between mb-5">
                     <div class="flex justify-center">
-                        <a href="/all-cv" class="transition duration-300 inline-block border-2 
+                        <a href="{{ url('/all-cv') }}" class="transition duration-300 inline-block border-2 
             font-bold border-black text-black py-2 px-4 rounded-xl 
             hover:bg-black hover:text-white shadow-lg">
                             Refresh
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <a href="/all-partners" class="transition duration-300 inline-block border-2 
+                        <a href="{{ url('/all-partners') }}" class="transition duration-300 inline-block border-2 
             font-bold border-black text-black py-2 px-4 rounded-xl 
             hover:bg-black hover:text-white shadow-lg">
                             Check CV by Partner

@@ -19,12 +19,12 @@
                     Search with Jobe Code or Company Name
                 </p>
                 <div class="grid grid-cols-6 items-center">
-                    <form class="col-span-5" action="/admin-applications">
+                    <form class="col-span-5" action="{{ url('/admin-applications') }}">
 
                         @include('components._search')
 
                     </form>
-                    <a href="/admin-applications" class="m-4 col-span-1 transition duration-300 inline-block border-2 
+                    <a href="{{ url('/admin-applications') }}" class="m-4 col-span-1 transition duration-300 inline-block border-2 
             font-bold border-black text-black rounded-xl py-2
             hover:bg-black hover:text-white shadow-lg flex justify-center">
                         Refresh

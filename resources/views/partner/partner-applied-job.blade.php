@@ -9,12 +9,12 @@
                 <p class="ml-4">Search Jobs with Job Code or Company Name</p>
 
                 <div class="grid grid-cols-6 items-center">
-                    <form class="col-span-5" action="/partner-applied-list">
+                    <form class="col-span-5" action="{{ url('/partner-applied-list') }}">
 
                         @include('components._search')
 
                     </form>
-                    <a href="/partner-applied-list" class="m-4 col-span-1 transition duration-300 inline-block border-2 
+                    <a href="{{ url('/partner-applied-list') }}" class="m-4 col-span-1 transition duration-300 inline-block border-2 
             font-bold border-black text-black rounded-xl py-2
             hover:bg-black hover:text-white shadow-lg flex justify-center">
                         Refresh
