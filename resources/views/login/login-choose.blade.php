@@ -37,14 +37,14 @@
 
         <div class="flex justify-center">
             <div class="text-center">
-                <a href="/admin-login" class="w-32 mt-5 mr-2 inline-block border-2 font-bold 
+                <a href="{{ url('/admin-login') }}" class="w-32 mt-5 mr-2 inline-block border-2 font-bold 
             border-black text-white bg-black p-3 rounded-xl uppercase hover:text-black hover:bg-white 
             shadow-lg transition duration-200">
                     Admin
                 </a>
             </div>
             <div class="text-center">
-                <a href="/partner-login" class="w-32 mt-5 ml-2 inline-block border-2 font-bold 
+                <a href="{{ url('/partner-login') }}" class="w-32 mt-5 ml-2 inline-block border-2 font-bold 
             border-black text-white bg-black p-3 rounded-xl uppercase hover:text-black hover:bg-white 
             shadow-lg transition duration-200">
                     Partner
