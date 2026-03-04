@@ -29,6 +29,15 @@
         <i class="fa-solid fa-arrow-left"></i> Back
     </a>
 
+    <div class="border border-gray-200 p-10 rounded max-w-lg mx-auto mt-24">
+        <h1 class="text-2xl font-bold uppercase mb-1">Admin Login Information</h1>
+        <br>
+        <p>
+            Email: admin@oshigoto.com <br>
+            Pasword: pmm552002
+        </p>
+    </div>
+
     <div class="bg-gray-50 border border-gray-200 p-10 rounded max-w-lg mx-auto mt-24">
         <header class="text-center">
             <h2 class="text-2xl font-bold uppercase mb-1">
@@ -77,16 +86,6 @@
 
         </form>
     </div>
-
-    <div class="border border-gray-200 p-10 rounded max-w-lg mx-auto mt-24">
-        <h1 class="text-2xl font-bold uppercase mb-1">Admin Login Information</h1>
-        <br>
-        <p>
-            Email: admin@oshigoto.com <br>
-            Pasword: pmm552002
-        </p>
-    </div>
-
 
     <footer class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-black 
     text-white h-24 mt-24 opacity-90 md:justify-center">

@@ -29,6 +29,42 @@
         <i class="fa-solid fa-arrow-left"></i> Back
     </a>
 
+    <div class="border border-gray-200 p-10 rounded max-w-lg mx-auto mt-24">
+        <h1 class="text-2xl font-bold uppercase mb-1">Partner Login Information</h1>
+        <br>
+
+        <div>
+            <h2>
+                Partner 1: Toshin
+            </h2>
+            <p>
+                Email: mmtoshin@gmail.com <br>
+                Pasword: toshin2025
+            </p>
+        </div>
+        <br>
+        <div>
+            <h2>
+                Partner 2: Hikari
+            </h2>
+            <p>
+                Email: Hikari@gmail.comm <br>
+                Pasword: hikari2025
+            </p>
+        </div>
+        <br>
+        <div>
+            <h2>
+                Partner 3: Nihon
+            </h2>
+            <p>
+                Email: nihongo@gmail.com<br>
+                Pasword: nihon2025
+            </p>
+        </div>
+
+    </div>
+
     <div class="bg-gray-50 border border-gray-200 p-10 rounded max-w-lg mx-auto mt-24">
         <header class="text-center">
             <h2 class="text-2xl font-bold uppercase mb-1">
@@ -78,41 +114,7 @@
         </form>
     </div>
 
-    <div class="border border-gray-200 p-10 rounded max-w-lg mx-auto mt-24">
-        <h1 class="text-2xl font-bold uppercase mb-1">Partner Login Information</h1>
-        <br>
 
-        <div>
-            <h2>
-                Partner 1: Toshin
-            </h2>
-            <p>
-                Email: mmtoshin@gmail.com <br>
-                Pasword: toshin2025
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>
-                Partner 2: Hikari
-            </h2>
-            <p>
-                Email: Hikari@gmail.comm <br>
-                Pasword: hikari2025
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>
-                Partner 3: Nihon
-            </h2>
-            <p>
-                Email: nihongo@gmail.com<br>
-                Pasword: nihon2025
-            </p>
-        </div>
-
-    </div>
 
     <footer class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-black 
 text-white h-24 mt-24 opacity-90 md:justify-center">
