@@ -110,7 +110,7 @@
                                         {{$cv -> cv_name}}
                                     </td>
                                     <td class="px-4 py-8 border-t border-b border-gray-300 text-center font-bold">
-                                        <a href="/all-cv?search={{$cv -> cv_jp_level}}">
+                                        <a href="{{ url('/all-cv?search='.$cv -> cv_jp_level) }}">
                                             {{$cv -> cv_jp_level}}
                                         </a>
                                         @if($cv -> cv_jp_certificate)
@@ -123,7 +123,7 @@
                                         @endif
                                     </td>
                                     <td class="px-4 py-8 border-t border-b border-gray-300 text-center font-bold">
-                                        <a href="/all-cv?search={{$cv -> cv_job_type}}">
+                                        <a href="{{ url('/all-cv?search='.$cv -> cv_job_type) }}">
                                             {{$cv -> cv_job_type}}
                                         </a>
                                         @if($cv -> cv_job_certificate)
@@ -146,7 +146,8 @@
                                         </a>
                                     </td>
                                     <td class="px-4 py-8 border-t border-b border-gray-300 text-center">
-                                        <a href="/all-cv/{{$cv -> cv_code}}" class="text-blue-700 hover:underline"><i
+                                        <a href="{{ url('/all-cv/'.$cv -> cv_code) }}"
+                                            class="text-blue-700 hover:underline"><i
                                                 class="fa fa-info-circle mr-2"></i>More Info</a>
                                     </td>
 

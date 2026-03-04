@@ -188,11 +188,11 @@
                                     {{$cv -> cv_status}}
                                 </td>
                                 <td class="border-t border-b border-gray-300 text-center">
-                                    <a href="/partner-view-cv/{{$cv -> cv_code}}/edit"
+                                    <a href="{{ url('/partner-view-cv/'.$cv -> cv_code.'/edit') }}"
                                         class="text-blue-400 px-6 py-2 rounded-xl hover:underline hover:text-blue-700">
                                         <i class="fa-solid fa-pen-to-square"></i>Edit
                                     </a>
-                                    <a href="/partner-view-cv/{{$cv -> cv_code}}"
+                                    <a href="{{ url('/partner-view-cv/'.$cv -> cv_code) }}"
                                         class="text-blue-400 px-6 py-2 rounded-xl hover:underline hover:text-blue-700">
                                         View
                                     </a>

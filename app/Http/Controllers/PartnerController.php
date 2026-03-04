@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CVForms;
-use App\Models\partner;
+use App\Models\Partner;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Auth;

@@ -69,7 +69,7 @@
                                     <span class="text-blue-700">{{ $job->job_availability }}</span>
                                 </th>
                                 <th class="px-2 py-4 border-t border-b border-gray-300 text-center">
-                                    <a href="/all-listed-jobs/{{$job -> job_code}}">
+                                    <a href="{{ url('/all-listed-jobs/'.$job -> job_code) }}">
                                         <span class="text-blue-700">See Job Info</span></a>
                                 </th>
                             </tr>
@@ -181,7 +181,7 @@
                                     {{ $app->cv->cv_status }}
                                 </td>
                                 <td class="px-4 py-8 border-t border-b border-gray-300 text-center">
-                                    <a href="/admin-applications/{{$app->cv->cv_code}}/evaluate"
+                                    <a href="{{ url('/admin-applications/'.$app->cv->cv_code.'/evaluate') }}"
                                         class="text-blue-700 hover:underline">
                                         <i class="fa fa-pencil-square mr-1"></i>Evaluate
                                     </a>

@@ -45,7 +45,7 @@
             <!-- SEARCH DATE SECTION -->
             <div class="flex flex-col justify-center mb-5 bg-gray-50 border border-gray-200 rounded p-5 text-center">
 
-                <form class="mb-10" action="/admin-home/date-filter" method="GET">
+                <form class="mb-10" action="{{ url('/admin-home/date-filter') }}" method="GET">
                     <h3 class="text-2xl font-bold mb-5">Filter by Date</h3>
                     <div class="grid grid-cols-1 mb-5">
                         <div class="m-5">
@@ -195,7 +195,7 @@
         document.addEventListener('DOMContentLoaded', () => {
 
             //Job Type Barchart
-            fetch('/chart/jobs-by-type')
+            fetch('{{ url("/chart/jobs-by-type") }}')
                 .then(response => response.json())
                 .then(data => {
                     const labels = data.map(item => item.job_type);
@@ -228,7 +228,7 @@
                 });
 
             //Partners by Nationality
-            fetch('/chart/partners-by-nationality')
+            fetch('{{ url("/chart/partners-by-nationality") }}')
                 .then(response => response.json())
                 .then(data => {
                     const labels = data.map(item => item.partner_nationality);
@@ -260,7 +260,7 @@
                 });
 
             // CVs by Nationality 
-            fetch('/chart/cvs-by-nationality')
+            fetch('{{ url("/chart/cvs-by-nationality") }}')
                 .then(response => response.json())
                 .then(data => {
                     const labels = data.map(item => item.cv_nationality);
@@ -287,7 +287,7 @@
                 });
 
             //Statistics   
-            fetch('/graph/statistics')
+            fetch('{{ url("/graph/statistics") }}')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('monthlyCVs').textContent = data.cv.monthly;

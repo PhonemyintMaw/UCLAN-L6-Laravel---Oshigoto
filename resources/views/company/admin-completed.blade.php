@@ -104,7 +104,7 @@
                                         {{$app -> cv -> cv_nationality}}
                                     </td>
                                     <td class="px-4 py-8 border-t border-b border-gray-300 text-center">
-                                        <a href="/all-cv/{{$app -> cv -> cv_code}}"
+                                        <a href="{{ url('/all-cv/'.$app -> cv -> cv_code) }}"
                                             class="text-blue-700 hover:underline">
                                             <i class="fa fa-info-circle mr-2"></i>CV Info</a>
                                     </td>
